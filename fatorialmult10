@@ -1,0 +1,28 @@
+Exercicio: Pega um numero fatorial calcula e multiplica por 10?
+
+#include <stdio.h>
+
+int main()
+{
+	int fat, n;
+	fat = 1;
+	int Valor;
+
+	printf("Insira o numeral para calcular o fatorial:");
+	scanf_s("%d", &n);
+
+	for (; n >= 1;)
+	{
+		fat *= n;
+		--n;
+	}
+
+	printf("O valor desse numero e': %d \n", fat);
+
+
+	Valor = fat * 10;
+	printf("Valor * 10= %d \n", Valor);
+	
+
+	return 0;
+}
